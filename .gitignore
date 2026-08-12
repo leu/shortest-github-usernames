@@ -221,5 +221,4 @@ __marimo__/
 secret.txt
 
 # outputs for this program
-available.txt
-taken.txt
+out/

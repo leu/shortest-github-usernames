@@ -1,3 +1,4 @@
+from pathlib import Path
 from github import Github
 from github import Auth
 
@@ -29,8 +30,10 @@ def __main__():
 
     print(g.get_rate_limit())
 
-    file_available = open('available.txt', 'w')
-    file_taken = open('taken.txt', 'w')
+    Path("./out").mkdir(exist_ok=True)
+
+    file_available = open('out/available.txt', 'w')
+    file_taken = open('out/taken.txt', 'w')
 
     for list in get_usernames(3):
         for username in list:
