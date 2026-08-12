@@ -219,3 +219,7 @@ __marimo__/
 
 # github secrets file used for this program
 secret.txt
+
+# outputs for this program
+available.txt
+taken.txt
