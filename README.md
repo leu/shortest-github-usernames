@@ -1,6 +1,6 @@
 Finds the shortest available usernames on GitHub
 
-To run, first create a secret.txt file at the repository root, create a Personal access token (classic) in your GitHub settings, and place that token in the secret.txt file.
+To run, first create a secret.txt file at the repository root, create a Personal access token (classic) with scope read:user in your GitHub settings, and place that token in the secret.txt file.
 
 Create a Python venv, and install requirements.txt.
 
