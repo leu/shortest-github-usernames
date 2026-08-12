@@ -27,7 +27,7 @@ def __main__():
     auth = Auth.Token(access_token)
     g = Github(auth=auth)
 
-    print(g.get_rate_limit().get__repr__({}))
+    print(g.get_rate_limit())
 
     file_available = open('available.txt', 'w')
     file_taken = open('taken.txt', 'w')
