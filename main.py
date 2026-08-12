@@ -36,9 +36,9 @@ def __main__():
         for username in list:
             try:
                 g.get_user(username)
-                file_available.write(username + '\n')
-            except Exception:
                 file_taken.write(username + '/n')
+            except Exception:
+                file_available.write(username + '\n')
             print(username + ' checked')
 
     file_available.close()
