@@ -17,7 +17,8 @@ def get_usernames(length: int): #cant do aa-a
 def next_usernames(a: list[str], last_character: bool):
     result: list[str] = []
     for string1 in a:
-        for string2 in (ALLOWED_CHARS_NO_HYPHEN if string1[-1] == '-' or last_character else ALLOWED_CHARS):
+        allowed_next_chars = ALLOWED_CHARS_NO_HYPHEN if string1[-1] == '-' or last_character else ALLOWED_CHARS
+        for string2 in allowed_next_chars:
             result.append(string1 + string2)
     return result
 
