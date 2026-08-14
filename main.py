@@ -5,11 +5,11 @@ from github import Auth
 ALLOWED_CHARS_NO_HYPHEN = "abcdefghijklmnopqrstuvwxyz1234567890"
 ALLOWED_CHARS = ALLOWED_CHARS_NO_HYPHEN + "-"
 
-def get_usernames(length: int): #cant do aa-a
+def get_usernames(username_length: int): #cant do aa-a
     usernames: list[list[str]] = []
     usernames.append(ALLOWED_CHARS_NO_HYPHEN)
-    for i in range(0, length):
-        usernames.append(next_usernames(usernames[i], i == (length - 2)))
+    for i in range(0, username_length):
+        usernames.append(next_usernames(usernames[i], i == (username_length - 2)))
     usernames.pop(0)
     usernames.pop(0)
     return usernames
