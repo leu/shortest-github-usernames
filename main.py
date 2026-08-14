@@ -37,7 +37,7 @@ def __main__():
     file_available = open('out/available.txt', 'w')
     file_taken = open('out/taken.txt', 'w')
 
-    username_length_input = input('Enter the username length to search as a number (suggested: 3):')
+    username_length_input = input('Enter the username length to search as a number (suggested: 3): ')
     username_length = int(username_length_input)
 
     for list in get_usernames(username_length):
