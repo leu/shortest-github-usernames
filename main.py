@@ -53,4 +53,6 @@ def __main__():
     file_taken.close()
     g.close()
 
+    print('Done!')
+
 __main__()
